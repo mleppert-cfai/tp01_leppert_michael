@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" 
+        integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <title>Formulaire</title>
+</head>
+<body class="text-left m-1">
+    <header>
+        <h1 class="text-center border-bottom border-3 border-dark">Formulaire</h1>
+    </header>
+    <main>
+        <form class="row g-3 m-1" id="form">
+            <div class="col-md-4">
+                <label for="nom" class="form-label">Nom</label>
+                <input type="text" class="form-control" id="nom" placeholder="Bon" required>
+                <div id="invalidNom" class="invalid-input text-danger">
+                    Veuillez entrer un nom valide.
+                </div>
+            </div>
+            <div class="col-md-4">
+                <label for="Pprenom" class="form-label">Prénom</label>
+                <input type="text" class="form-control" id="prenom" placeholder="Jean" required>
+                <div id="invalidPrenom" class="invalid-input text-danger">
+                    Veuillez entrer un prénom valide.
+                </div>
+            </div>
+            <div class="col-md-4">
+                <label for="civilite" class="form-label">Civilité</label>
+                <select class="form-select" id="civilite" required>
+                  <option selected disabled value="">Choisir...</option>
+                  <option>Madame</option>
+                  <option>Monsieur</option>
+                  <option>Autre</option>
+                </select>
+                <div id="invalidCivilite" class="invalid-input text-danger">
+                    Veuillez choisir une civilité.
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <label for="adresse" class="form-label">Adresse</label>
+                <input type="text" class="form-control" id="adresse" placeholder="15 rue du houblon" required>
+                <div id="invalidAdresse" class="invalid-input text-danger">
+                    Veuillez entrer une adresse valide.
+                </div>
+            </div>
+            <div class="col-md-4">
+                <label for="ville" class="form-label">Ville</label>
+                <input type="text" class="form-control" id="ville" placeholder="Strasbourg" required>
+                <div id="invalidVille" class="invalid-input text-danger">
+                    Veuillez entrer un nom valide.
+                </div>
+            </div>
+            <div class="col-md-4">
+                <label for="codePostal" class="form-label">Code postal</label>
+                <input type="text" class="form-control" id="codePostal" placeholder="67000" required>
+                <div id="invalidCodePostal" class="invalid-input text-danger">
+                    Veuillez entrer un code postal valide.
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <label for="email" class="form-label">Email</label>
+                <input type="text" class="form-control" id="email" placeholder="jean.bon@mail.com" required>
+                <div id="invalidEmail" class="invalid-input text-danger">
+                    Veuillez entrer un email valide.
+                </div>
+            </div>
+            <div class="col-md-4">
+                <label for="telephone" class="form-label">téléphone</label>
+                <input type="text" class="form-control" id="telephone" placeholder="0122334455" required>
+                <div id="invalidTelephone" class="invalid-input text-danger">
+                    Veuillez entrer un numéro de téléphone valide.
+                </div>
+            </div>
+            
+            <div class="col-md-8">
+                <label for="login" class="form-label">Login</label>
+                <input type="text" class="form-control" id="login" aria-describedby="inputGroupPrepend" placeholder="JeanBon67" required>
+                <div id="invalidLogin" class="invalid-input text-danger">
+                    Veuillez choisir un login valide.
+                </div>
+            </div>
+
+            <div class="col-md-6">
+                <label for="password" class="form-label">Password</label>
+                <input type="password" class="form-control" id="password" aria-describedby="inputGroupPrepend" required>
+                <div id="invalidPassword" class="invalid-input text-danger">
+                    Veuillez choisir un mot de passe valide.
+                </div>
+            </div>
+            <div class="col-md-6">
+                <label for="confirmPassword" class="form-label">Confirm Password</label>
+                <input type="password" class="form-control" id="confirmPassword" aria-describedby="inputGroupPrepend" required>
+                <div id="confirmPasswordInvalid" class="invalid-input text-danger">
+                    Les mots de passe ne correspondent pas.
+                </div>
+            </div>
+
+            <div class="col-12 text-center">
+              <button class="btn btn-primary" type="submit">Valider le formulaire</button>
+            </div>            
+          </form>
+    </main>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous">
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous">
+    </script>
+    <script src="../BACKEND/script.js"></script>
+</body>
+</html>
